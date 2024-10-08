@@ -16,7 +16,7 @@ app.get('/', function (req, res) {
 });
 
 app.post('/api/fileanalyse', upload.single('upfile'), (req,res)=>{
-  // console.log('reqfile', req.file) cambios
+  // console.log('reqfile', req.file) 
   // console.log('reqbody', req.body)
   try{
     const {originalname:name, mimetype:type, size} = req.file
